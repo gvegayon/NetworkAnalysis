@@ -723,9 +723,6 @@ Co-authorship supports simple counting, (refined) fractional weight with or with
 cosine normalization. Bibliographic coupling supports: coupling strength and
 angle. Co-citation supports the cosine normalization of count weights.
 
-- `r pkg("Diderot")` is geared towards the analysis of citation networks using
-modularity and heterocitation metrics based on Scopus data.
-
 ### Networks in the natural and life sciences
 
 - `r bioc("Rcy3")` provides access to [Cytoscape](https://cytoscape.org/), one
