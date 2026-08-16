@@ -3,7 +3,7 @@ name: NetworkAnalysis
 topic: Network Analysis
 maintainer: Fabio Ashtar Telarico, Pavel N. Krivitsky, James Hollway
 email: Fabio-Ashtar.Telarico@fdv.uni-lj.si
-version: 2025-12-05
+version: 2026-08-15
 source: https://github.com/cran-task-views/NetworkAnalysis/
 ---
 
@@ -215,6 +215,11 @@ lists, `r pkg("network")` and `r pkg("igraph")` objects) as ASCII strings and
 vice versa using `graph6`, `sparse6`, and `digraph6`
 [formats](http://users.cecs.anu.edu.au/~bdm/data/formats.txt).
 
+- `r pkg("rgexf")` creates, reads, and writes graphs in the GEXF exchange
+format used by Gephi. It supports node and edge attributes, visualization
+attributes, dynamic networks, and edge weights, and interoperates with
+`r pkg("igraph")` objects.
+
 - `r pkg("tidygraph")` is designed for handling and manipulating graph data
 within the [_tidyverse_](https://www.tidyverse.org/) framework. It does not make
 it into "core" packages because it lacks a comprehensive set of tools for
@@ -307,6 +312,10 @@ and Cayley graphs with various layout options.
 
 - `r pkg("ggraph")` allows to plot `r pkg("igraph")` objects by building up
 plots layer by layer.
+
+- `r pkg("netplot")` draws `r pkg("igraph")` and `r pkg("network")` objects
+using the grid graphics system, with aesthetically oriented defaults for
+out-of-the-box network visualizations.
 
 - `r pkg("ggsom")` offers functions to plot self-organizing maps (SOMs). 
 
@@ -531,6 +540,7 @@ several specialized extensions are available.
   | Samples of small networks                                   | `r pkg("ergmito")`                       |
   | Large hierarchical ERGMs                                    | `r pkg("bigergm")`                       |
   | Bayesian methods for ERGMs                                  | `r pkg("Bergm")`                         |
+  | Publication-ready tables of ERGM terms (non-CRAN)           | `r github("gvegayon/tabulergm")`         |
   | Template for implementing custom network effects (non-CRAN) | `r github("statnet/ergm.userterms")`     |
   | User-contributed network effects (non-CRAN)                 | `r github("statnet/ergm.terms.contrib")` |
 
@@ -656,6 +666,11 @@ statistical analysis, visualization and simulation of network diffusion and
 contagion processes. It implements algorithms for calculating network diffusion
 statistics such as transmission rate, hazard rates, exposure models, network
 threshold levels, infectiousness (contagion), and susceptibility.
+
+- `r pkg("epiworldR")` provides a fast and flexible framework for simulating
+agent-based epidemic models on networks. It includes common compartmental
+models such as SIS, SIR, and SEIR and supports user-defined disease processes,
+interventions, and multiple-disease simulations.
 
 ### Others
 
